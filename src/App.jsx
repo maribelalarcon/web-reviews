@@ -1,35 +1,58 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { useState } from "react";
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <nav className="nav-container">
+        <div className="nav-logo">Reviews</div>
+        <div className="nav-links">
+          <button className="nav-button">
+            <img src="/src/assets/anadir.png" alt="login" />
+          </button>
+          <button className="nav-button">
+            <img src="/src/assets/usuario.png" alt="login" />
+          </button>
+        </div>
+      </nav>
+
+      <header>
+        <h1>Negocios Argentinos en España</h1>
+        <h2>Encuentra los mejores lugares y servicios con sabor argentino.</h2>
+
+        <div className="buttons-container">
+          <button>Todos</button>
+          <button>Parrilla</button>
+          <button>Pizzeria</button>
+          <button>Empanadas</button>
+          <button>Helados</button>
+          <button>Doctoras</button>
+        </div>
+
+        <div>
+          <div className="cards">
+            <h4>Parrilla Argentina</h4>
+            <description>Lorem ipsum dolor sit amet</description>
+          </div>
+          <div className="cards">
+            <h4>Parrilla Argentina</h4>
+            <description>Lorem ipsum dolor sit amet</description>
+          </div>
+          <div className="cards">
+            <h4>Parrilla Argentina</h4>
+            <description>Lorem ipsum dolor sit amet</description>
+          </div>
+          <div className="cards">
+            <h4>Parrilla Argentina</h4>
+            <description>Lorem ipsum dolor sit amet</description>
+          </div>
+          <div className="cards">
+            <h4>Parrilla Argentina</h4>
+            <description>Lorem ipsum dolor sit amet</description>
+          </div>
+        </div>
+      </header>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
