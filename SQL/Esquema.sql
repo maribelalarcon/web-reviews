@@ -1,0 +1,4 @@
+DROP SCHEMA IF EXISTS reviews;
+CREATE SCHEMA IF NOT EXISTS reviews;
+USE reviews;
+

@@ -11,7 +11,7 @@
   padding: 15px 25px;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 1px solid #eee;
+ 
 }
 
 .nav-logo {
@@ -27,10 +27,7 @@
   padding: 10px;
 }
 
-.nav-button img {
-  width: 25px;
-  height: 25px;
-}
+
 
 h1{
   text-align: center;
@@ -54,6 +51,7 @@ h2{
 .buttons-container button{
   padding: 10px 20px;
   border-radius: 10px;
+
 }
 
 .cards{
